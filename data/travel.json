@@ -153,6 +153,30 @@
       ]
     },
     {
+      "name": "Halifax",
+      "country": "Canada",
+      "coordinates": [
+        -63.5753196,
+        44.6488625
+      ]
+    },
+    {
+      "name": "La Have",
+      "country": "Canada",
+      "coordinates": [
+        -64.367571,
+        44.296324
+      ]
+    },
+    {
+      "name": "Montreal",
+      "country": "Canada",
+      "coordinates": [
+        -73.567256,
+        45.5016889
+      ]
+    },
+    {
       "name": "Hong Kong",
       "country": "China",
       "coordinates": [
@@ -169,6 +193,22 @@
       ]
     },
     {
+      "name": "Nice",
+      "country": "France",
+      "coordinates": [
+        7.261953200000001,
+        43.7101728
+      ]
+    },
+    {
+      "name": "Paris",
+      "country": "France",
+      "coordinates": [
+        2.3522219,
+        48.856614
+      ]
+    },
+    {
       "name": "Barcelona",
       "country": "Spain",
       "coordinates": [
@@ -182,6 +222,22 @@
       "coordinates": [
         -15.5474373,
         27.9202202
+      ]
+    },
+    {
+      "name": "Kaohsiung",
+      "country": "Taiwan",
+      "coordinates": [
+        120.3014353,
+        22.6272784
+      ]
+    },
+    {
+      "name": "Taipei",
+      "country": "Taiwan",
+      "coordinates": [
+        121.5654177,
+        25.0329694
       ]
     },
     {
@@ -396,19 +452,20 @@
       ]
     },
     {
+      "name": "Portland",
+      "country": "USA",
+      "state": "Maine",
+      "coordinates": [
+        -70.2553259,
+        43.66147100000001
+      ]
+    },
+    {
       "name": "Providence",
       "country": "USA",
       "coordinates": [
         -71.4128343,
         41.8239891
-      ]
-    },
-    {
-      "name": "San Juan",
-      "country": "USA",
-      "coordinates": [
-        -98.15528719999999,
-        26.1892409
       ]
     },
     {
@@ -439,6 +496,24 @@
       "coordinates": [
         -73.5387341,
         41.0534302
+      ]
+    },
+    {
+      "name": "Trenton",
+      "country": "USA",
+      "state": "Maine",
+      "coordinates": [
+        -68.3700178,
+        44.4389668
+      ]
+    },
+    {
+      "name": "Waterford",
+      "country": "USA",
+      "state": "Maine",
+      "coordinates": [
+        -70.7091738,
+        44.1932639
       ]
     }
   ]
