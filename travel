@@ -72,22 +72,27 @@ class Command < CLAide::Command
       self.summary = 'Add a city you\'ve visited'
       self.arguments = [
         CLAide::Argument.new('CITY', true),
-        CLAide::Argument.new('COUNTRY', false)
+        CLAide::Argument.new('COUNTRY', false),
+        CLAide::Argument.new('STATE', false),
       ]
 
       def initialize(argv)
         @city = argv.shift_argument
         @country = argv.shift_argument || 'USA'
+        @state = argv.shift_argument
         super
       end
 
       def validate!
+        super
         raise Informative, 'Need a city' unless @city && @country
       end
 
       def run
         with_travel do |travel|
-          travel['cities'] << { 'name' => @city, 'country' => @country }
+          city = { 'name' => @city, 'country' => @country }
+          city['state'] = @state if @state
+          travel['cities'] << city
         end
         super
       end
@@ -100,6 +105,7 @@ class Command < CLAide::Command
       name = city['name']
       country = city['country'] || 'USA'
       url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{name}&components=country:#{country}"
+      url << "|administrative_area:#{city['state']}" if city['state']
       begin
         response = JSON.load open(url)
         location = response['results'].first['geometry']['location']
