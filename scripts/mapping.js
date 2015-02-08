@@ -1,11 +1,12 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiaXJhY2UiLCJhIjoiOFRlNWJSOCJ9.DnNeo9t7r0a5irSR1Be4_Q';
 
 var map = L.mapbox.map('map-one', 'irace.km1dk6m1', {
-  attributionControl: false        
+  attributionControl: false,
+  detectRetina: true
 });
 
 var processData = function (error, results) {
-  var stateData   = results[0] 
+  var stateData   = results[0]
     , countryData = results[1]
     , travelData  = results[2];
 

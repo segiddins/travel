@@ -1,312 +1,445 @@
 {
   "countries": [
-    { "id": "CAN" },
-    { "id": "CZE" },
-    { "id": "BHS" },
-    { "id": "FRA" },
-    { "id": "DEU" },
-    { "id": "GBR" },
-    { "id": "GRC" },
-    { "id": "ITA" },
-    { "id": "MAR" },
-    { "id": "NLD" },
-    { "id": "ESP" },
-    { "id": "SWE" },
-    { "id": "USA",
+    {
+      "id": "ARG"
+    },
+    {
+      "id": "CAN"
+    },
+    {
+      "id": "FIN"
+    },
+    {
+      "id": "FRA"
+    },
+    {
+      "id": "CHN",
+      "_comment": "Only Hong Kong"
+    },
+    {
+      "id": "ISR"
+    },
+    {
+      "id": "ITA"
+    },
+    {
+      "id": "JAM"
+    },
+    {
+      "id": "MEX"
+    },
+    {
+      "id": "PRI"
+    },
+    {
+      "id": "KNA"
+    },
+    {
+      "id": "LCA"
+    },
+    {
+      "id": "VCT"
+    },
+    {
+      "id": "ESP"
+    },
+    {
+      "id": "TWN"
+    },
+    {
+      "id": "GBR"
+    },
+    {
+      "id": "USA",
       "states": [
-        { "id": "CA" },
-        { "id": "CT" },
-        { "id": "CO" },
-        { "id": "DE" },
-        { "id": "FL" },
-        { "id": "GA" },
-        { "id": "IL" },
-        { "id": "IN" },
-        { "id": "LA" },
-        { "id": "MD" },
-        { "id": "MA" },
-        { "id": "MI" },
-        { "id": "NV" },
-        { "id": "NH" },
-        { "id": "NJ" },
-        { "id": "NY" },
-        { "id": "NC" },
-        { "id": "OH" },
-        { "id": "OR" },
-        { "id": "PA" },
-        { "id": "RI" },
-        { "id": "SC" },
-        { "id": "TX" },
-        { "id": "VT" },
-        { "id": "VA" },
-        { "id": "DC" },
-        { "id": "WI" }
+        {
+          "id": "AZ"
+        },
+        {
+          "id": "CA"
+        },
+        {
+          "id": "CO"
+        },
+        {
+          "id": "CT"
+        },
+        {
+          "id": "DE"
+        },
+        {
+          "id": "DC"
+        },
+        {
+          "id": "FL"
+        },
+        {
+          "id": "IL"
+        },
+        {
+          "id": "IN"
+        },
+        {
+          "id": "MA"
+        },
+        {
+          "id": "ME"
+        },
+        {
+          "id": "MD"
+        },
+        {
+          "id": "MN"
+        },
+        {
+          "id": "NV"
+        },
+        {
+          "id": "NH"
+        },
+        {
+          "id": "NJ"
+        },
+        {
+          "id": "NM"
+        },
+        {
+          "id": "NY"
+        },
+        {
+          "id": "OH"
+        },
+        {
+          "id": "PA"
+        },
+        {
+          "id": "RI"
+        },
+        {
+          "id": "SC"
+        },
+        {
+          "id": "VT"
+        },
+        {
+          "id": "VA"
+        },
+        {
+          "id": "WI"
+        }
       ]
+    },
+    {
+      "id": "VIR"
     }
   ],
   "cities": [
     {
-      "name": "New York",
-      "description": "Where I live!",
-      "coordinates": [-73.997641, 40.730904]
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "description": "Vacation with Mom, December 2014",
+      "coordinates": [
+        -58.3815931,
+        -34.6037232
+      ]
     },
     {
-      "name": "Burlington",
-      "description": "Came here on a weekend trip with Tracy",
-      "coordinates": [-73.212072, 44.475882]
+      "name": "Mendoza",
+      "country": "Argentina",
+      "description": "Vacation with Mom, December 2014",
+      "coordinates": [
+        -68.8440498,
+        -32.890183
+      ]
     },
     {
-      "name": "Santa Monica",
-      "description": "Stayed here for the 2013 Boston College at USC Trojans game",
-      "coordinates": [-118.491191, 34.019454]
+      "name": "Hong Kong",
+      "country": "China",
+      "coordinates": [
+        114.109497,
+        22.396428
+      ]
     },
     {
-      "name": "San Francisco",
-      "description": "<ul><li>Vacation with Tracy in 2011</li><li>WWDC 2013</li></ul>",
-      "coordinates": [-122.419416, 37.774929]
-    },
-    {
-      "name": "Napa",
-      "coordinates": [-122.286865, 38.297538]
-    },
-    {
-      "name": "South Bend",
-      "description": "Boston College at Notre Dame, fall 2007",
-      "coordinates": [-86.251990, 41.676355]
-    },
-    {
-      "name": "Paris",
-      "coordinates": [2.352222, 48.856614]
-    },
-    {
-      "name": "London",
-      "coordinates": [-0.127758, 51.507351]      
-    },
-    {
-      "name": "Amsterdam",
-      "coordinates": [4.895168, 52.370216]
-    },
-    {
-      "name": "Rome",
-      "coordinates": [12.496366, 41.902783]
-    },
-    {
-      "name": "Florence",
-      "coordinates": [11.248001, 43.771033]
-    },
-    {
-      "name": "Pisa",
-      "coordinates": [10.401689, 43.722839]
-    },
-    {
-      "name": "Venice",
-      "coordinates": [12.315515, 45.440847]
-    },
-    {
-      "name": "Cinque Terre",
-      "coordinates": [9.712391, 44.128109]
-    },
-    {
-      "name": "Prague",
-      "coordinates": [14.437800, 50.075538]
-    },
-    {
-      "name": "Costa Navarino",
-      "coordinates": [21.656628, 36.956091]
-    },
-    {
-      "name": "Athens",
-      "coordinates": [23.729360, 37.983917]
-    },
-    {
-      "name": "Zakynthos",
-      "coordinates": [20.898827, 37.788160]
+      "name": "Helsinki",
+      "country": "Finland",
+      "coordinates": [
+        24.9410248,
+        60.17332440000001
+      ]
     },
     {
       "name": "Barcelona",
-      "coordinates": [2.173403, 41.385064]
+      "country": "Spain",
+      "coordinates": [
+        2.1734035,
+        41.3850639
+      ]
     },
     {
-      "name": "Marrakech",
-      "coordinates": [-8.008889, 31.630000]
+      "name": "Gran Canaria",
+      "country": "Spain",
+      "coordinates": [
+        -15.5474373,
+        27.9202202
+      ]
     },
     {
-      "name": "Munich",
-      "coordinates": [11.581981, 48.135125]
-    },
-    {
-      "name": "Stockholm",
-      "coordinates": [18.068581, 59.329323]
-    },
-    {
-      "name": "Denver",
-      "coordinates": [-104.990251, 39.739236]
-    },
-    {
-      "name": "Boulder",
-      "coordinates": [-105.270546, 40.014986]
-    },
-    {
-      "name": "Bend",
-      "description": "Visited Kurt Reinhart, June 2010",
-      "coordinates": [-121.315310, 44.058173]
-    },
-    {
-      "name": "Newark",
-      "coordinates": [-75.454136, 38.634394]
-    },
-    {
-      "name": "Las Vegas",
-      "coordinates": [-115.139830, 36.169941]
-    },
-    {
-      "name": "Las Vegas",
-      "coordinates": [-115.139830, 36.169941]
-    },
-    {
-      "name": "Elkhorn",
-      "description": "Dave Brace’s bacelor party, summer 2012",
-      "coordinates": [-88.544545, 42.672793]
-    },
-    {
-      "name": "Chicago",
-      "coordinates": [-87.629798, 41.878114]
-    },
-    {
-      "name": "Atlanta",
-      "coordinates": [-84.387982, 33.748995]
-    },
-    {
-      "name": "Clemson",
-      "coordinates": [-82.837365, 34.683438]
-    },
-    {
-      "name": "Charleston",
-      "coordinates": [-79.931051, 32.776475]
-    },
-    {
-      "name": "Bristol",
-      "coordinates": [-71.736716, 43.591150]
-    },
-    {
-      "name": "New Orleans",
-      "coordinates": [-90.071532, 29.951066]
-    },
-    {
-      "name": "Youngstown",
-      "coordinates": [-80.649519, 41.099780]
-    },
-    {
-      "name": "Austin",
-      "coordinates": [-97.743061, 30.267153]
-    }, 
-    {
-      "name": "South Padre Island",
-      "coordinates": [-97.168126, 26.111840]
-    },
-    {
-      "name": "Washington, DC",
-      "coordinates": [-77.036871, 38.907192]
-    },
-    {
-      "name": "Boston",
-      "coordinates": [-71.058880, 42.360082]
-    },
-    {
-      "name": "Ocean City",
-      "coordinates": [-75.084906, 38.336503]
-    },
-    {
-      "name": "Charlotte",
-      "coordinates": [-80.843127, 35.227087]
-    },
-    {
-      "name": "Charlotte",
-      "coordinates": [-75.466516, 35.558493]
-    },
-    {
-      "name": "Miami",
-      "coordinates": [-80.191790, 25.761680]
-    },
-    {
-      "name": "Fort Lauderdale",
-      "coordinates": [-80.137317, 26.122439]
-    },
-    {
-      "name": "Orlando",
-      "coordinates": [-81.379236, 28.538335]
-    },
-    {
-      "name": "Palm City",
-      "coordinates": [-80.266159, 27.167827]
-    },
-    {
-      "name": "Montreal",
-      "coordinates": [-73.567256, 45.501689]
-    },
-    {
-      "name": "Hilton Head",
-      "coordinates": [-80.752608, 32.216316]
-    },
-    {
-      "name": "Hilton Head",
-      "coordinates": [-80.752608, 32.216316]
-    },
-    {
-      "name": "Savannah",
-      "coordinates": [-81.099834, 32.083541]
-    },
-    {
-      "name": "Charlottesville",
-      "coordinates": [-78.476678, 38.029306]
-    },
-    {
-      "name": "Hampstead",
-      "coordinates": [-71.180980, 42.874488]
-    },
-    {
-      "name": "Manchester",
-      "coordinates": [-71.454789, 42.995640]
-    },
-    {
-      "name": "Providence",
-      "coordinates": [-71.412834, 41.823989]
-    },
-    {
-      "name": "Cape Cod",
-      "coordinates": [-70.320911, 41.699096]
+      "name": "London",
+      "country": "UK",
+      "coordinates": [
+        -0.1277583,
+        51.5073509
+      ]
     },
     {
       "name": "Albany",
-      "coordinates": [-73.756232, 42.652579]
+      "country": "USA",
+      "coordinates": [
+        -73.7562317,
+        42.6525793
+      ]
     },
     {
-      "name": "Mohegan Sun",
-      "coordinates": [-72.110095, 41.431690]
+      "name": "Arlington",
+      "coordinates": [
+        -77.1067698,
+        38.8799697
+      ]
     },
     {
-      "name": "Atlantis",
-      "coordinates": [-77.324406, 25.077397]
+      "name": "Baltimore",
+      "country": "USA",
+      "coordinates": [
+        -76.6121893,
+        39.2903848
+      ]
     },
     {
-      "name": "Versailles",
-      "coordinates": [2.130122, 48.801408]
+      "name": "Bemidji",
+      "country": "USA",
+      "coordinates": [
+        -94.88027799999999,
+        47.473611
+      ]
     },
     {
-      "name": "Philadelphia",
-      "coordinates": [-75.165222, 39.952584]
+      "name": "Berkeley",
+      "coordinates": [
+        -122.272747,
+        37.8715926
+      ]
     },
     {
-      "name": "Hershey",
-      "coordinates": [-76.650247, 40.285924]
+      "name": "Bethesda",
+      "country": "USA",
+      "coordinates": [
+        -77.0947092,
+        38.984652
+      ]
     },
     {
-      "name": "Lake George",
-      "coordinates": [-73.712341, 43.426181]
+      "name": "Boston",
+      "country": "USA",
+      "coordinates": [
+        -71.0588801,
+        42.3600825
+      ]
     },
     {
-      "name": "Montauk",
-      "coordinates": [-71.954515, 41.035935]
+      "name": "Boulder",
+      "country": "USA",
+      "coordinates": [
+        -105.2705456,
+        40.0149856
+      ]
+    },
+    {
+      "name": "Burlington",
+      "coordinates": [
+        -73.21207199999999,
+        44.4758825
+      ]
+    },
+    {
+      "name": "Charleston",
+      "coordinates": [
+        -79.93105120000001,
+        32.7764749
+      ]
+    },
+    {
+      "name": "Chicago",
+      "coordinates": [
+        -87.6297982,
+        41.8781136
+      ]
+    },
+    {
+      "name": "Cleveland",
+      "coordinates": [
+        -81.6943605,
+        41.49932
+      ]
+    },
+    {
+      "name": "Denver",
+      "country": "USA",
+      "coordinates": [
+        -104.990251,
+        39.7392358
+      ]
+    },
+    {
+      "name": "Greenwich",
+      "coordinates": [
+        -73.6281964,
+        41.0262417
+      ]
+    },
+    {
+      "name": "Hartford",
+      "country": "USA",
+      "coordinates": [
+        -72.6850932,
+        41.76371109999999
+      ]
+    },
+    {
+      "name": "Ithica",
+      "country": "USA",
+      "coordinates": [
+        -76.5018807,
+        42.4439614
+      ]
+    },
+    {
+      "name": "Las Vegas",
+      "coordinates": [
+        -115.1398296,
+        36.1699412
+      ]
+    },
+    {
+      "name": "Miami",
+      "coordinates": [
+        -80.1917902,
+        25.7616798
+      ]
+    },
+    {
+      "name": "Milwaukee",
+      "country": "USA",
+      "coordinates": [
+        -87.9064736,
+        43.0389025
+      ]
+    },
+    {
+      "name": "Minneapolis",
+      "country": "USA",
+      "coordinates": [
+        -93.2650108,
+        44.977753
+      ]
+    },
+    {
+      "name": "Naples",
+      "coordinates": [
+        -81.7948103,
+        26.1420358
+      ]
+    },
+    {
+      "name": "New Haven",
+      "country": "USA",
+      "coordinates": [
+        -72.9278835,
+        41.308274
+      ]
+    },
+    {
+      "name": "New York",
+      "coordinates": [
+        -74.0059413,
+        40.7127837
+      ]
+    },
+    {
+      "name": "Oakland",
+      "coordinates": [
+        -122.2711137,
+        37.8043637
+      ]
+    },
+    {
+      "name": "Philidelphia",
+      "country": "USA",
+      "coordinates": [
+        -75.1652215,
+        39.9525839
+      ]
+    },
+    {
+      "name": "Pittsburg",
+      "country": "USA",
+      "coordinates": [
+        -79.9958864,
+        40.44062479999999
+      ]
+    },
+    {
+      "name": "Port Chester",
+      "coordinates": [
+        -73.66568339999999,
+        41.0017643
+      ]
+    },
+    {
+      "name": "Providence",
+      "country": "USA",
+      "coordinates": [
+        -71.4128343,
+        41.8239891
+      ]
+    },
+    {
+      "name": "San Juan",
+      "country": "USA",
+      "coordinates": [
+        -98.15528719999999,
+        26.1892409
+      ]
+    },
+    {
+      "name": "San Juan",
+      "country": "USA",
+      "coordinates": [
+        -66.1057217,
+        18.4663338
+      ]
+    },
+    {
+      "name": "Santa Fe",
+      "coordinates": [
+        -105.937799,
+        35.6869752
+      ]
+    },
+    {
+      "name": "Scarsdale",
+      "coordinates": [
+        -73.7845768,
+        41.0050977
+      ]
+    },
+    {
+      "name": "Stamford",
+      "country": "USA",
+      "coordinates": [
+        -73.5387341,
+        41.0534302
+      ]
     }
   ]
 }
