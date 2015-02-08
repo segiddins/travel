@@ -1,0 +1,125 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'open-uri'
+
+require 'claide'
+
+FILE = 'data/travel.json'
+
+def with_travel(&block)
+  travel = JSON.load File.read(FILE)
+  block.call(travel)
+  File.open(FILE, 'w') { |f| f.write JSON.pretty_generate(travel) + "\n" }
+end
+
+class Informative < StandardError
+  include CLAide::InformativeError
+end
+
+class Command < CLAide::Command
+  def self.options; []; end
+  self.version = '1.0.0'
+  self.abstract_command = true
+  self.command = 'travel'
+  class Add < Command
+    self.abstract_command = true
+    self.summary = 'Add travel history!'
+
+    def run
+      Tidy.run([])
+    end
+
+    class Country < Add
+      self.summary = 'Add a country you\'ve visited'
+      self.arguments = [
+        CLAide::Argument.new('COUNTRY', true)
+      ]
+
+      def initialize(argv)
+        @country = argv.shift_argument
+        super
+      end
+
+      def run
+        with_travel do |travel|
+          travel['countries'] << { 'id' => @country }
+        end
+        super
+      end
+    end
+
+    class State < Add
+      self.summary = 'Add a state you\'ve visited'
+      self.arguments = [
+        CLAide::Argument.new('STATE', true)
+      ]
+
+      def initialize(argv)
+        @state = argv.shift_argument
+        super
+      end
+
+      def run
+        with_travel do |travel|
+          travel['countries'].find { |c| c['id'] == 'USA' }['states'] << { 'id' => @state }
+        end
+        super
+      end
+    end
+
+    class City < Add
+      self.summary = 'Add a city you\'ve visited'
+      self.arguments = [
+        CLAide::Argument.new('CITY', true),
+        CLAide::Argument.new('COUNTRY', false)
+      ]
+
+      def initialize(argv)
+        @city = argv.shift_argument
+        @country = argv.shift_argument || 'USA'
+        super
+      end
+
+      def validate!
+        raise Informative, 'Need a city' unless @city && @country
+      end
+
+      def run
+        with_travel do |travel|
+          travel['cities'] << { 'name' => @city, 'country' => @country }
+        end
+        super
+      end
+    end
+  end
+
+  class Tidy < Command
+    self.summary = 'Tidy the travel.json file'
+    def coordinates_from_city(city)
+      name = city['name']
+      country = city['country'] || 'USA'
+      url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{name}&components=country:#{country}"
+      begin
+        response = JSON.load open(url)
+        location = response['results'].first['geometry']['location']
+        [location['lng'], location['lat']]
+      rescue
+        warn "Failed to grab coordinates for #{city}"
+      end
+    end
+
+    def run
+      with_travel do |travel|
+        travel['cities'].each do |city|
+          city['coordinates'] = coordinates_from_city(city) unless city['coordinates']
+        end
+
+        travel['cities'].uniq!
+        travel['cities'].sort_by! { |c| [c['country'] || 'USA', c['name']] }
+      end
+    end
+  end
+end
+
+Command.run(ARGV)
